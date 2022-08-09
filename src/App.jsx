@@ -1,9 +1,24 @@
- function App() {
+import { Header } from "./components/Header";
+import {Post} from "./Post";
 
-  return (
-   
-    <h1>teste</h1>
+import './global.css'
 
+
+function App() {
+  return (   
+    <div>
+      <Header/>
+
+      
+      <Post
+        author='marcos Henrique'
+        content = 'Tes tes tes--------------------------e'
+      />
+      <Post
+          author='marcos Henrique'
+          content = 'Tes tes ---------------------------------'
+      />
+    </div>
   )
 }
 
